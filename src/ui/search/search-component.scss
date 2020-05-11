@@ -1,0 +1,27 @@
+.search {
+  @media (max-width: $small) {
+    width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    width: auto;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    padding-left: $cpElementPadding;
+    max-width: 375px;
+    width: 100%;
+    height: $cpElementHeight;
+    border: 1px solid rgba(228, 227, 227, 0.2);
+    border-radius: $cpElementBorderRadius 0 0 $cpElementBorderRadius;
+  }
+
+  &__button {
+    width: auto;
+    padding-left: $cpElementPadding;
+    padding-right: $cpElementPadding;
+    border-radius: 0 $cpElementBorderRadius $cpElementBorderRadius 0;
+  }
+}

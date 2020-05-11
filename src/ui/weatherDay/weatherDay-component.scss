@@ -1,0 +1,105 @@
+.weather-day {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  color: $fontColor;
+  white-space: nowrap;
+
+  @media (max-width: $small) {
+
+  }
+  &__city {
+    font-size: 2.75rem;
+    line-height: 3.375rem;
+
+    @media (max-width: $small) {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+  }
+
+  &__date-time {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-transform: none;
+
+    @media (max-width: $small) {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 3fr;
+    grid-template-areas:
+            "temp img"
+            "temp more";
+  }
+
+  &__temp {
+    grid-area: temp;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 19rem;
+    line-height: 23rem;
+
+    @media (max-width: $huge) {
+      font-size: 14rem;
+      line-height: 20rem;
+    }
+
+    @media (max-width: $large) {
+      font-size: 13rem;
+      line-height: 17rem;
+    }
+
+    @media (max-width: $medium) {
+      font-size: 10rem;
+      line-height: 14rem;
+    }
+
+    @media (max-width: $small) {
+      font-size: 7rem;
+      line-height: 11rem;
+    }
+
+    &-deg {
+      font-size: 6.25rem;
+      line-height: 14rem;
+
+      @media (max-width: $large) {
+        font-size: 5rem;
+        line-height: 10rem;
+      }
+
+      @media (max-width: $small) {
+        font-size: 4rem;
+        line-height: 7rem;
+      }
+    }
+  }
+
+  &__img {
+    grid-area: img;
+
+    img {
+      height: 80%;
+    }
+  }
+
+  &__more {
+    grid-area: more;
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+
+    @media (max-width: $small) {
+      font-size: 0.7rem;
+      line-height: 1.3rem;
+    }
+  }
+}

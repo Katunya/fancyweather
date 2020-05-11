@@ -1,0 +1,61 @@
+.button {
+  width: 2.75rem;
+  height: $cpElementHeight;
+  border: 0;
+  border-radius: $cpElementBorderRadius;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: $cpElementFontSize;
+  font-weight: bold;
+  color: $fontColor;
+  background: $buttonBackground;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.5;
+  }
+
+  &--selected {
+    background: $buttonBackgroundSelected;
+  }
+}
+
+.dropdown {
+  width: 71px;
+  height: $cpElementHeight;
+  background: rgba(174, 181, 185, 0.5);
+  border: 0;
+  border-radius: $cpElementBorderRadius;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: $fontColor;
+}
+
+.control-panel {
+  display: flex;
+
+  &__update {
+    border: 0;
+    background: url('~../assets/images/icon-update.svg') center center no-repeat;
+    background-color: $buttonBackground;
+  }
+
+  &__lang {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &__faringate {
+    border-radius: $cpElementBorderRadius 0 0 $cpElementBorderRadius;
+  }
+
+  &__celsius {
+    border-radius: 0 $cpElementBorderRadius $cpElementBorderRadius 0;
+  }
+}
+

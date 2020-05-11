@@ -1,0 +1,38 @@
+@import './_variables';
+@import './layout.scss';
+@import './controlPanel/controlPanel-component.scss';
+@import './search/search-component.scss';
+@import './weatherDay/weatherDay-component.scss';
+@import './weatherForecast/weatherForecast-component.scss';
+@import './geoposition/geoposition-component.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  background: url("../assets/images/1862357.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  @media (max-width: $large) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $medium) {
+    font-size: 12px;
+  }
+
+  @media (max-width: $small) {
+    font-size: 12px;
+  }
+
+  @media screen and (orientation:landscape) {
+    height: 100%;
+  }
+}
